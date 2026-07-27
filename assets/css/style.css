@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#terminal {
+    width: 100%;
+    height: 100vh;
+    padding: 1.25rem;
+    font-size: 13px;
+    color: #cccccc;
+    line-height: 1.35rem;
+    overflow-y: auto;
+    user-select: text;
+    background-color: #000000;
+}
+
+.prompt {
+    color: #cccccc;
+    margin-right: 0.5rem;
+}
+
+#inputDisplay {
+    color: #cccccc;
+    white-space: pre;
+}
+
+.cursor {
+    display: inline-block;
+    width: 7px;
+    height: 15px;
+    background-color: #cccccc;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.terminal-input {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.input-line {
+    display: block;
+}
+
+.command-line {
+    display: flex;
+    align-items: flex-start;
+}
+
+.command-prefix {
+    color: #cccccc;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.command-text {
+    color: #cccccc;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+a {
+    color: #5555ff !important;
+    text-decoration: underline !important;
+}
+
+a:hover {
+    color: #7777ff !important;
+}

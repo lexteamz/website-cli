@@ -1,0 +1,32 @@
+{
+    "aliases": {
+        "help": ["help", "?"],
+        "clear": ["clear", "cls"]
+    },
+    "list": [
+        {
+            "name": "help",
+            "description": "Displays this list of commands",
+            "type": "builtin",
+            "action": "showHelp"
+        },
+        {
+            "name": "discord",
+            "description": "Opens our Discord invite link",
+            "type": "link",
+            "action": "discord"
+        },
+        {
+            "name": "download",
+            "description": "Shows the link to download the latest LInjector release",
+            "type": "link",
+            "action": "download"
+        },
+        {
+            "name": "clear",
+            "description": "Clears the terminal screen",
+            "type": "builtin",
+            "action": "clearScreen"
+        }
+    ]
+}
